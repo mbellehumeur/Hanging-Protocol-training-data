@@ -11,11 +11,15 @@
  
 If we do not standardize how this information is stored, radiologists will have to train each system separately.
 
-### Format
-Each stored hanging protocol traing data point wiouyld be composed of a folder containing:
+## Format
+Each stored hanging protocol training data point wiould be composed of a folder containing:
 1. A screenshot of the layout with privacy mode on.
 2. A hanging protocol DICOM object defining the layout and which series was assigned to which viewport (and other details).
-3. Separate folder for each study of the patient containing the metadata of each study/series of the patient in static DICOMweb format.  Therefore each series/displayset will also include a thumbnail. 
+3. Separate folder for each study of the patient containing the metadata of each study/series of the patient in static DICOMweb format.  Therefore each series/displayset will also include a thumbnail image. 
+4.  A way to identify which study was the current.
+
+
+The goal being that a hanging protocol AI agent could, using the metadata of the current and prior studies, find the most appropriate layout.  
 
 
  
