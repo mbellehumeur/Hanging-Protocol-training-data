@@ -16,8 +16,8 @@ We would also lose the benefit of accelerated development of hanging protocol AI
 
 ## Criterias
 1. The training data should be human readable.  Therefore we would use DICOMweb/JSON encoding instead of binary.
-The training data should be human manageable.  
-2. The size of the data should be small enough that radiologist can keep their own backup copy, modify it manually if they wish and create multiple repositories if they need too.
+ 
+2. The training data should be portable. The size of the data should be small enough that radiologist can keep their own backup copy, modify it manually if they wish and create multiple repositories if they need too.
 
 
 ## Example training data format
