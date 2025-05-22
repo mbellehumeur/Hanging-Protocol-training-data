@@ -1,1 +1,22 @@
-
+[
+  {
+    "00080016": { "vr": "UI", "Value": ["1.2.840.10008.5.1.4.38.1"] }, // SOP Class UID for Hanging Protocol
+    "00080018": { "vr": "UI", "Value": ["1.2.3.4.5.6.7.8.9.10"] },     // SOP Instance UID (example)
+    "00720002": { "vr": "SH", "Value": ["ChestPAProtocol"] },           // Hanging Protocol Name
+    "00720004": { "vr": "LO", "Value": ["Chest PA 2-up layout"] },      // Hanging Protocol Description
+    "00720006": { "vr": "CS", "Value": ["USER"] },                     // Hanging Protocol Level
+    "00720008": { "vr": "LO", "Value": ["Dr. Smith"] },                // Hanging Protocol Creator
+    "0072000A": { "vr": "DT", "Value": ["20250522"] },                 // Hanging Protocol Creation Date
+    "00720012": { "vr": "SQ", "Value": [                                // Hanging Protocol Definition Sequence
+      {
+        "00720020": { "vr": "SQ", "Value": [                            // Hanging Protocol Display Set Sequence
+          {
+            "00720030": { "vr": "CS", "Value": ["IMAGE"] },             // Display Set Purpose Code
+            "00720034": { "vr": "IS", "Value": [1] },                   // Display Set Number
+            "00720038": { "vr": "IS", "Value": [2] }                    // Number of Screens
+          }
+        ]}
+      }
+    ]}
+  }
+]
