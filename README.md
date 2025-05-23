@@ -17,7 +17,7 @@ We would also lose the benefit of accelerated development of hanging protocol AI
 ## Criterias
 1. The training data should be human readable.  Therefore we would use DICOMweb/JSON encoding instead of binary.
  
-2. The training data should be portable. The size of the data should be small enough that radiologist can keep their own backup copy, modify it manually if they wish and create multiple repositories if they need too.
+2. The training data should be portable. The size of the data should be small enough that radiologist can keep their own backup copy, modify it manually if they wish and create multiple repositories if they need to.
 
 
 ## Example training data format
@@ -32,11 +32,18 @@ Each stored hanging protocol training data point would be composed of a folder c
 The goal being that a hanging protocol AI agent could, using the studies and series level metadata of the current and prior studies, find the most appropriate layout. 
 
 
-We believe that having the full study/series/image metadata, in addition to the thumbnails,  allow AI to compete
+We believe that having the full study/series/image metadata, in addition to the thumbnails,  allow AI to compete with rule based systems,  Especially when do systems are not constantly maintained by highly skilled individuals.  Gen AI would also enable personal hanging protocols which is almost impossible today because of maintenance costs.  In others words, if your institution has HP with, for example,  priors studies on the right side of the screen, do not bother asking to have them on the left side.  It will not happen. 
 
 
  ## Viewer support
 
-Viewers would at a minimum need to support reading the hanging protocol object and assign the series specified to the layout.  Viewers that already support the existing standard object would be advantaged.
+Viewers would at a minimum need to support reading the hanging protocol object and assign the series by the AI specified to the layout.  Viewers that already support the existing standard object would be advantaged as they should be.
 
-The request for the hanging protocol object would be done by the worklist or the viewer.
+The request for the hanging protocol object would be done by the worklist or the viewer.  They would provide the same study/series metadata that is in the training data and the AI agent would return the most appropriate hanging protocol from your training data and assign series to the defined viewports. 
+
+
+## How can I help?
+
+Contact your favorite IHE & DICOM committee standards writer or board member.  Thank them for their service and  express your desire for standardized hanging protocol data.
+
+Donate to imaging open source projects while specifying that you want to support open source implementation of the hanging protocol standard.
