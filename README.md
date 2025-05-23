@@ -2,7 +2,7 @@
  
  ## Introduction
  Gen AI / LLMs can today produce a good draft of report impressions based on learning the report history of the radiologist.
- We believe that GenAI could today produce valid hanging protocols for viewers if it had enough training data.
+ We believe that GenAI could today produce reasonably valid hanging protocols if it had enough training data.
 
  Therefore, we want to  propose a standardized way of storing personal hanging protocol Gen AI training data.  
  This data would be used by PACS viewers or AI agents to infer the appropriate display of the images available. 
@@ -12,16 +12,16 @@
  They would instead provide access to their personal training data repository to the viewer software. 
 
 
- The viewers would not only use the data for display but also provide the ability to add new hanging protocol training cases to the user's repository.
+Ideally, the viewers would not only use the data for display but also provide the ability to add new hanging protocol training cases to the user's repository.
 
-We believe that having the full study/series/image metadata, in addition to the thumbnails, will allow AI to compete with rule based systems.  Especially when those systems are not constantly maintained by highly skilled individuals.  
+We believe that having the full study/series/image metadata, in addition to the thumbnails, could allow AI to compete with rule based systems.  Especially when those systems are not constantly maintained by highly skilled individuals.  
 
-Gen AI would also enable personal hanging protocols which is almost impossible today because of maintenance costs.  In others words, if your institution has HP with, for example,  priors studies on the right side of the screen, do not bother asking to have them on the left side.  It will not happen. 
+Gen AI would also enable personal hanging protocols which is almost impossible today because of maintenance costs.  
 
 ## Why do this? 
 If we do not standardize how this information is stored early on radiologists will have to train each system separately.
 We would also lose the benefit of accelerated development of hanging protocol AI agents because of lack of standardization.
-We could reallocate the significant resources spent on hanging protocols to other important tasks like data quality, reporting integration and workflow, ect.
+We could reallocate the significant resources spent on hanging protocols to other important tasks like reporting integration and workflow, data quality, security, ect.
 
 ## Criterias
 1. The training data should be human readable.  Therefore we would use DICOMweb/JSON encoding instead of DICOM binary.
@@ -43,9 +43,11 @@ The goal being that a hanging protocol AI agent could, using the studies and ser
 
  ## Viewer support
 
-Viewers would at a minimum need to support reading the hanging protocol object and assign the series by the AI specified to the layout.  Viewers that already support the existing standard object would be advantaged as they should be.
+Viewers would at a minimum need to support reading the hanging protocol object and assign the series specified by the AI to the layout.  Viewers that already support the existing hanging protocol DICOM standard object would be advantaged as they should be.
 
-The request for the hanging protocol object would be done by the worklist or the viewer.  They would provide the same study/series metadata that is in the training data and the AI agent would return the most appropriate hanging protocol from your training data and assign series to the defined viewports. 
+The request for the hanging protocol object would be done by the worklist or the viewer.  They would provide the same study/series metadata that is in the training data and the AI agent would return the most appropriate hanging protocol from your training data and assign series to the defined viewports in the hanging protocol object. 
+
+
 
 
 ## How can I help?
@@ -53,7 +55,7 @@ The request for the hanging protocol object would be done by the worklist or the
 If your hanging protocols are working OK, maybe take a few minutes in the near future to thank your technologists, imaging IT and vendor support team. 
 
 
-Contact your favorite IHE & DICOM committee standards writer or board member.  Thank them for their service and ask them if they feel that standardizing hanging protocol training data would be useful.
+Get in touch with your favorite IHE & DICOM committee standards writer or board member.  Thank them for their service and ask them if they feel that standardizing hanging protocol training data would be useful.
 
 
 If you feel that having open-source software to support new or existing standards is useful,  consider donating to an organization that works on that.
