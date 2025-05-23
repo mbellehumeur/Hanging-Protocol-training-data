@@ -50,7 +50,11 @@ The request for the hanging protocol object would be done by the worklist or the
 
 ## How can I help?
 
-Contact your favorite IHE & DICOM committee standards writer or board member.  Thank them for their service and  express your desire for standardized hanging protocol data.  The DICOM standard for hanging protocol already exists but it  needs to be refreshed to DICOMweb formatting and GenAI use.
+If your hanging protocols are working OK, think of a way to thank your technologists, imaging IT and vendor support team. 
 
 
-Donate to imaging open source projects while specifying that you want to support open source implementation of the hanging protocol standard.
+Contact your favorite IHE & DICOM committee standards writer or board member.  Thank them for their service and ask them what they think of standardization of hanging protocol training data.
+
+
+If you feel that having open-source software to support new or existing standards is useful,  consider donating to an organization that could help with that.
+
