@@ -4,18 +4,27 @@
  Gen AI / LLMs can today produce a good draft of report impressions based on learning the report history of the radiologist.
  We believe that GenAI could today produce valid hanging protocols for viewers if it had enough training data.
 
- We want to  propose a standardized way of storing personal hanging protocol Gen AI training data.  
- This data would be used by PACS viewers or AI agents to infer the appropriate display of the images available.  
+ Therefore, we want to  propose a standardized way of storing personal hanging protocol Gen AI training data.  
+ This data would be used by PACS viewers or AI agents to infer the appropriate display of the images available. 
+
+
  Because of standardization, radiologists would no longer have to train/configure each viewer they encounter.  
  They would instead provide access to their personal training data repository to the viewer software. 
+
+
  The viewers would not only use the data for display but also provide the ability to add new hanging protocol training cases to the user's repository.
+
+We believe that having the full study/series/image metadata, in addition to the thumbnails, will allow AI to compete with rule based systems.  Especially when those systems are not constantly maintained by highly skilled individuals.  
+
+Gen AI would also enable personal hanging protocols which is almost impossible today because of maintenance costs.  In others words, if your institution has HP with, for example,  priors studies on the right side of the screen, do not bother asking to have them on the left side.  It will not happen. 
 
 ## Why do this? 
 If we do not standardize how this information is stored early on radiologists will have to train each system separately.
 We would also lose the benefit of accelerated development of hanging protocol AI agents because of lack of standardization.
+We could reallocate the significant resources spent on hanging protocols to other important tasks like data quality, reporting integration and workflow, ect.
 
 ## Criterias
-1. The training data should be human readable.  Therefore we would use DICOMweb/JSON encoding instead of binary.
+1. The training data should be human readable.  Therefore we would use DICOMweb/JSON encoding instead of DICOM binary.
  
 2. The training data should be portable. The size of the data should be small enough that radiologist can keep their own backup copy, modify it manually if they wish and create multiple repositories if they need to.
 
@@ -32,9 +41,6 @@ Each stored hanging protocol training data point would be composed of a folder c
 The goal being that a hanging protocol AI agent could, using the studies and series level metadata of the current and prior studies, find the most appropriate layout. 
 
 
-We believe that having the full study/series/image metadata, in addition to the thumbnails,  allow AI to compete with rule based systems,  Especially when do systems are not constantly maintained by highly skilled individuals.  Gen AI would also enable personal hanging protocols which is almost impossible today because of maintenance costs.  In others words, if your institution has HP with, for example,  priors studies on the right side of the screen, do not bother asking to have them on the left side.  It will not happen. 
-
-
  ## Viewer support
 
 Viewers would at a minimum need to support reading the hanging protocol object and assign the series by the AI specified to the layout.  Viewers that already support the existing standard object would be advantaged as they should be.
@@ -44,6 +50,7 @@ The request for the hanging protocol object would be done by the worklist or the
 
 ## How can I help?
 
-Contact your favorite IHE & DICOM committee standards writer or board member.  Thank them for their service and  express your desire for standardized hanging protocol data.
+Contact your favorite IHE & DICOM committee standards writer or board member.  Thank them for their service and  express your desire for standardized hanging protocol data.  The DICOM standard for hanging protocol already exists but it  needs to be refreshed to DICOMweb formatting and GenAI use.
+
 
 Donate to imaging open source projects while specifying that you want to support open source implementation of the hanging protocol standard.
