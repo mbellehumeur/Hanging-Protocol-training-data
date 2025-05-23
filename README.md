@@ -42,15 +42,17 @@ The goal being that a hanging protocol AI agent could, using the studies and ser
 
 ## How Hanging Protocol AI Agents Work
 
+
 ```
-+-------------------+         +---------------------+         +-------------------+
-|                   |         |                     |         |                   |
-|   PACS Viewer     +-------->+  Hanging Protocol   +-------->+   Display Layout  |
-| (study metadata & |         |    AI Agent         |         | (images assigned  |
-|   images input)   |         | (selects protocol)  |         |   to viewports)   |
-|                   |         |                     |         |                   |
-+-------------------+         +---------------------+         +-------------------+
++-----------------------------------+         +---------------------+         +-------------------+
+|                                   |         |                     |         |                   |
+|   PACS Viewer                     +-------->+  Hanging Protocol   +-------->+   Display Layout  |
+| (current & prior study metadata   |         |    AI Agent         |         | (images assigned  |
+|  and thumbnails)                  |         | (selects protocol   |         |   to viewports)   |
+|                                   |         |  and assigns series |         |                   |
++-----------------------------------+         +---------------------+         +-------------------+
 ```
+*The PACS viewer sends current and prior study metadata and thumbnails to the AI agent, which selects the best hanging protocol and returns the layout for display.*
 *The PACS viewer sends study metadata and images to the AI agent, which selects the best hanging protocol and returns the layout for display.*
 
  ## Viewer support
