@@ -33,7 +33,7 @@ We could reallocate the significant resources spent on hanging protocols to othe
 
 Each stored hanging protocol training data point would be composed of a folder containing:
 1. A screenshot of the layout with privacy mode on.
-2. A [hanging protocol DICOM information object](https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.23.html) defining the layout and which series was assigned to which viewport (and other details).  This object would not try to define rules for the hanging protocol but just store what the user selected.  Also of interest is the work in [section V](https://dicom.nema.org/medical/dicom/current/output/chtml/part17/chapter_V.html).
+2. A [hanging protocol DICOM information object](https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.23.html) defining the layout and which series was assigned to which viewport (and other details).  This object would not try to define rules for the hanging protocol but just store what the user selected.  Also of interest is the work in [section V](https://dicom.nema.org/medical/dicom/current/output/chtml/part17/chapter_V.html).  THe hard work of defining monitor geometry, layouts, viewport types, viewport linking, ect, all that is already existing in the DICOM standard.
 3. Separate folder for each study of the patient containing the metadata of each study/series/image(object) of the patient in [static DICOMweb](https://github.com/RadicalImaging/Static-DICOMWeb) format.  Therefore each display set will also include a thumbnail image. Patient level information and bulk data (DICOM image data) would not be stored.
 4.  A way to identify which study was the current.
 
