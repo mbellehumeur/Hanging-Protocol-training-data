@@ -40,6 +40,18 @@ Each stored hanging protocol training data point would be composed of a folder c
 
 The goal being that a hanging protocol AI agent could, using the studies and series level metadata of the current and prior studies, find the most appropriate layout. 
 
+## How Hanging Protocol AI Agents Work
+
+```
++-------------------+         +---------------------+         +-------------------+
+|                   |         |                     |         |                   |
+|   PACS Viewer     +-------->+  Hanging Protocol   +-------->+   Display Layout  |
+| (study metadata & |         |    AI Agent         |         | (images assigned  |
+|   images input)   |         | (selects protocol)  |         |   to viewports)   |
+|                   |         |                     |         |                   |
++-------------------+         +---------------------+         +-------------------+
+```
+*The PACS viewer sends study metadata and images to the AI agent, which selects the best hanging protocol and returns the layout for display.*
 
  ## Viewer support
 
