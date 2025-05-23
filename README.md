@@ -50,11 +50,11 @@ The request for the hanging protocol object would be done by the worklist or the
 
 ## How can I help?
 
-If your hanging protocols are working OK, think of a way to thank your technologists, imaging IT and vendor support team. 
+If your hanging protocols are working OK, maybe take a few minutes in the near future to thank your technologists, imaging IT and vendor support team. 
 
 
-Contact your favorite IHE & DICOM committee standards writer or board member.  Thank them for their service and ask them what they think of standardization of hanging protocol training data.
+Contact your favorite IHE & DICOM committee standards writer or board member.  Thank them for their service and ask them if they feel that standardizing hanging protocol training data would be useful.
 
 
-If you feel that having open-source software to support new or existing standards is useful,  consider donating to an organization that could help with that.
+If you feel that having open-source software to support new or existing standards is useful,  consider donating to an organization that works on that.
 
