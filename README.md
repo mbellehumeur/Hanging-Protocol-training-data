@@ -1,4 +1,5 @@
- # SIIM Hackathon 2025  -  Standardized, personal training data for GenAI hanging protocols
+ # SIIM Hackathon 2025
+ # Standardized, personal training data for GenAI hanging protocols
  
  ## Introduction
  Gen AI / LLMs can today produce a good draft of report impressions based on learning the report history of the radiologist.
