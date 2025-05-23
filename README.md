@@ -64,7 +64,7 @@ The request for the hanging protocol object would be done by the worklist or the
 
 
 
-## How can I help?
+## How can you help?
 
 If your hanging protocols are working OK, maybe take a few minutes in the near future to thank your technologists, imaging IT and vendor support team if you are not doing so regularly already.
 
