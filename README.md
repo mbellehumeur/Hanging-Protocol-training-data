@@ -52,7 +52,7 @@ The request for the hanging protocol object would be done by the worklist or the
 
 ## How can I help?
 
-If your hanging protocols are working OK, maybe take a few minutes in the near future to thank your technologists, imaging IT and vendor support team. 
+If your hanging protocols are working OK, maybe take a few minutes in the near future to thank your technologists, imaging IT and vendor support team if you are not doing so regularly already.
 
 
 Get in touch with your favorite IHE & DICOM committee standards writer or board member.  Thank them for their service and ask them if they feel that standardizing hanging protocol training data would be useful.
